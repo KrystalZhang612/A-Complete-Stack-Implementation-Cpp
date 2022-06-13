@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 #define STACKSIZE 100 
 //define a const static int stack size as 100 
 
@@ -17,8 +16,7 @@ private:
 	//top index position to traverse the stack array 
 	
 	int topPosition; 
-	
-	
+		
 public:
 	
 	//The initializer: a stack is always initizlied as empty.
@@ -29,8 +27,6 @@ public:
 		topPosition = -1; 
 	}
 	
-	
-
 //implement a push() function to insert an element onto the stack
 	
 	void push(int data) {
@@ -56,10 +52,7 @@ public:
 		
 	
 	}
-	
-	
-	
-	
+		
 	//pop() function to always remove the most recently added element
 	//from the collection and returns the element followed by LIFO method 
 	
@@ -85,7 +78,6 @@ public:
 		
 	}
 	
-	
 	//peek() function returns the most recently added element (without removing it)
 	
 	int peek() {
@@ -96,8 +88,7 @@ public:
 			
 			cout <<"Error: Stack Underflow. No most recently added elements to return." <<endl; 
 			
-			return -999999; 
-			
+			return -999999; 	
 			
 		}
 		
@@ -105,13 +96,8 @@ public:
 		
 		return myStack[topPosition]; 
 		
-	}
-
-	
-	
+	}	
 }; 
-
-
 
 	
 //Driver code 
@@ -188,15 +174,8 @@ int main(int argc, char *argv[]) {
 	
 	TestingStack.pop(); 
 	
-	
-	
-	
-	
-	return 0; 
-	
-	
-	
-	
+
+	return 0; 	
 	
 }
 	
